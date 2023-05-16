@@ -1,0 +1,51 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.products-container {
+  display: grid;
+  width: 1000px;
+  margin: 50px auto;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.each-prod {
+  background-color: rgb(216, 216, 216);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.each-prod:hover {
+  transform: scale(1.1);
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  font-size: 1rem;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #000;
+  background-color: #fff;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  box-shadow: 0 0 0 0 transparent;
+  transform: translateY(3px);
+}
