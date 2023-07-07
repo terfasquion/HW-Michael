@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  user-select: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header {
+  height: 10vh;
+  width: 90vw;
+  background-color: rgb(238, 231, 166);
+  border: black 5px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: rgb(120, 48, 120);
+  cursor: pointer;
+}
+
+.arrow-cursor {
+  cursor: default;
+}
+
+.main {
+  height: 85vh;
+  width: 90vw;
+  display: flex;
+  gap: 1vw;
+  justify-content: center;
+}
+
+.playground {
+  height: 100%;
+  width: 80%;
+  background-color: black;
+  position: relative;
+}
+
+.target {
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 8px 16px;
+  background-color: rgb(202, 166, 235);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid black;
+  cursor: crosshair;
+}
+
+.rotating-target {
+  animation-name: rotation-anim;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotation-anim {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.data {
+  height: 100%;
+  width: 20%;
+  background-color: rgb(180, 235, 218);
+}
+
+.data .data-item {
+  background-color: rgb(251, 255, 254);
+  height: 12%;
+  width: 80%;
+  margin: 0.8rem auto;
+  padding: 0.5rem 0.8rem;
+}
+
+.data-item-title {
+  margin: 0.7rem 0;
+  margin-top: 0.5rem;
+}
+
+.data-item-value {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.data .high-scores {
+  height: 28%;
+}
+
+.top-players-list {
+  font-size: 1rem;
+  padding: 0.3rem 0.5rem;
+  background-color: antiquewhite;
+}
+
+.top-players-list > li {
+  margin: 0.3rem 0;
+}
+
+.top-players-full-names {
+  font-size: 0.9rem;
+}
+
+.data-item-players {
+  position: relative;
+}
+
+.data-item-players > .top-players-qualification-dates {
+  position: absolute;
+  top: -4px;
+  left: 180px;
+  background-color: rgb(53, 67, 28);
+  color: greenyellow;
+  border: 1px solid rgb(53, 67, 28);
+  padding: 3px 9px;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.hidden {
+  display: none;
+}

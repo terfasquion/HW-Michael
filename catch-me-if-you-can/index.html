@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="./runner.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/main.js" defer></script>
+
+    <title>Catch Me If You Can</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>CATCH ME IF YOU CAN!</h1>
+    </header>
+    <main class="main">
+      <section class="playground" id="playground">
+        <span class="target" id="target">Click Me!</span>
+      </section>
+
+      <section class="data">
+        <article class="data-item score" id="score">
+          <h4 class="data-item-title">Score:</h4>
+          <span class="data-item-value" id="score-value"></span>
+        </article>
+
+        <article
+          class="data-item points-to-next-level"
+          id="points-to-next-level"
+        >
+          <h4 class="data-item-title">Points To Next Level:</h4>
+          <span class="data-item-value" id="points-to-next-level-value"></span>
+        </article>
+
+        <article class="data-item level" id="level">
+          <h4 class="data-item-title">Level:</h4>
+          <span class="data-item-value" id="level-value"></span>
+        </article>
+
+        <article class="data-item missed-clicks" id="missed-clicks">
+          <h4 class="data-item-title">Missed Clicks:</h4>
+          <span class="data-item-value" id="missed-clicks-value"></span>
+        </article>
+
+        <article class="data-item timer" id="timer">
+          <h4 class="data-item-title">Timer:</h4>
+          <span class="data-item-value" id="timer-value"></span>
+        </article>
+
+        <article class="data-item high-scores" id="high-scores">
+          <h4 class="data-item-title">High Scores:</h4>
+          <div class="data-item-value" id="high-scores-value">
+            <ul class="top-players-list">
+              <li class="data-item-players">
+                <div class="top-players-qualification-dates hidden"></div>
+                <span class="top-players-scores"></span> -
+                <span class="top-players-full-names"></span>
+              </li>
+              <li class="data-item-players">
+                <div class="top-players-qualification-dates hidden"></div>
+                <span class="top-players-scores"></span> -
+                <span class="top-players-full-names"></span>
+              </li>
+              <li class="data-item-players">
+                <div class="top-players-qualification-dates hidden"></div>
+                <span class="top-players-scores"></span> -
+                <span class="top-players-full-names"></span>
+              </li>
+              <li class="data-item-players">
+                <div class="top-players-qualification-dates hidden"></div>
+                <span class="top-players-scores"></span> -
+                <span class="top-players-full-names"></span>
+              </li>
+              <li class="data-item-players">
+                <div class="top-players-qualification-dates hidden"></div>
+                <span class="top-players-scores"></span> -
+                <span class="top-players-full-names"></span>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
